@@ -401,4 +401,175 @@ margin-bottom: 25px;
    color: #979797;
    font-size: 15px;
 }
+.heading{
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   margin: 20px auto;
+   color: #fff;
+}
+.heading h1{
+   font-size: 50px;
+   margin-bottom: 25px;
+   position: relative;
+}
+.heading h1 ::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   display: block;
+   margin:0 auto;
 
+}
+.heading p{
+   font-size: 18px;
+   color: #666;
+   margin-bottom: 35px;
+}
+.container{
+   width: 90%;
+   margin: 0 auto;
+   padding: 10px 20px;
+
+}
+.about{
+   display: flex;
+   justify-content:space-between ;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.about-img{
+   flex:1 ;
+   margin-right: 60px;
+   overflow: hidden;
+}
+.about-img img{
+   width: 400px;
+   height: 500px;
+   border-radius: 10px;
+   display: block;
+   transition: 0.5s ease;
+}
+.about-img :hover img{
+   transform: scale(1.2);
+}
+.about-content{
+   flex: 1;
+}
+.about-content h2{
+   font-size: 33px;
+   margin-bottom: 20px;
+   color:white;
+}
+.about-content p{
+   font-size: 18px;
+   line-height: 1.5;
+   color: white;
+}
+.contact{
+   position: relative;
+   min-height: 100vh;
+   padding: 50px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: url(tour2.jpg);
+   background-size: cover;
+   color: #000;
+}
+.contact .content{
+   max-width: 800px;
+   text-align: center;
+   
+}
+.contact .content h2{
+   font-size: 36px;
+   font-weight: 500;
+   color: #fff;
+}
+.contact .content p{
+   font-size: 300;
+   color: #fff;
+}
+.calender{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+.calender text{
+   color: #000;
+}
+.calender .contactInfo{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+.calender .contactInfo .boxes{
+   position: relative;
+   padding: 20px 0;
+   display: flex;
+}
+.calender .contactInfo .boxes .icon{
+   min-width: 60px;
+   height: 60px;
+   background: #fff;
+   display: flexbox;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 22px;
+}
+.calender .contactInfo .boxes .text{
+   display: flex;
+   margin-left: 20px;
+   font-size: 16px;
+   color: #fff;
+   flex-direction: column;
+   font-weight: 300;
+}
+.calender .contactInfo .boxes .text h3{
+   font-weight: 500;
+   color: #fff;
+}
+.contactForm{
+   width: 40%;
+   padding: 40px;
+   background: #fff;
+   border-radius: 10px;
+}
+.contactForm h2{
+   font-size: 30px;
+   color: #333;
+   font-weight: 500;
+}
+.contactForm .inputBox{
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+   width: 100%;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   border: none;
+   border-bottom: 2px solid #333;
+   outline: none;
+}
+.contactForm .inputBox span{
+   position: absolute;
+   left: 0;
+   font-size: 16px;
+   margin: 10px 0;
+   pointer-events: none;
+   transition: 0.5s;
+   color: #666;
+}
